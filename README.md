@@ -10,7 +10,7 @@ To install and run the game, follow these steps:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/socket-guessing-game.git
+git clone https://github.com/jelomarie/socket-guessing-game.git
 Navigate to the project directory:
 bash
 Copy code
