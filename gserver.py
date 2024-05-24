@@ -23,7 +23,7 @@ def generate_number(difficulty):
         return random.randint(1, 500)
     else:
         return None
-    
+
 def update_leaderboard(leaderboard, name, score):
     if name in leaderboard:
         if score < leaderboard[name]:
@@ -61,15 +61,15 @@ def handle_client(conn):
                 conn.send("Try lower!\n".encode())
     except (ConnectionResetError, ConnectionAbortedError):
         print("Client disconnected unexpectedly.")
-        
-        conn.send(f"The correct number was: {number_to_guess}\n".encode())
+
+    conn.send(f"The correct number was: {number_to_guess}\n".encode())
     
     leaderboard = load_leaderboard()
     update_leaderboard(leaderboard, name, tries)
     save_leaderboard(leaderboard)
 
     conn.close()
-    
+
 def main():
     HOST = '127.0.0.1'
     PORT = 7777
