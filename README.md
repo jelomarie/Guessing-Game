@@ -15,9 +15,8 @@ Navigate to the project directory:
 bash
 Copy code
 cd socket-guessing-game
-Install dependencies:
-Copy code
-pip install -r requirements.txt
+
+
 Usage
 Start the server:
 Copy code
@@ -25,9 +24,8 @@ python server.py
 Start the client:
 Copy code
 python client.py
+
 Follow the instructions on the client to play the game.
-Contributing
-If you'd like to contribute to this project, feel free to submit pull requests or open issues. Contributions are welcome!
 
 License
 This project is licensed under the MIT License.
